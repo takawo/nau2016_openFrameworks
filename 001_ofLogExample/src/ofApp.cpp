@@ -7,14 +7,17 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    ofLog(OF_LOG_NOTICE, "update");　// Xcode下のコンソールに"update"を出力
+    ofLog(OF_LOG_NOTICE, "update"); // Xcode下のコンソールに"update"を出力
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofLog(OF_LOG_NOTICE, "draw"); // Xcode下のコンソールに"draw"を出力
+    // ofToString(num) : 数値numを文字列に変換する関数
+
+    // Xcode下のコンソールに現在のフレーム数を表示。
+    ofLog(OF_LOG_NOTICE, "ofGetFrameNum : " + ofToString(ofGetFrameNum()));
     // Xcode下のコンソールに経過時間を表示。
-    // ofToStringは数字を文字列に変換する関数
     ofLog(OF_LOG_NOTICE, "ElapsedTime : " + ofToString(ofGetElapsedTimef()));
     
 
