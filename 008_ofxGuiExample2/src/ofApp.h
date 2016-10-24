@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp{
 
@@ -20,5 +21,12 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+    
+        ofxPanel gui; // GUI
+        ofParameter<float> countX; // GUIのパラメータ: カウンター
+        ofParameter<float> stepX; // GUIのパラメータ: ステップ幅
+        ofParameter<float> twistX; // GUIのパラメータ: 回転
+    
+        void stripePattern(); // 自作関数stripePattern
+        void exit(); // 終了時に実行される : xmlの保存
 };

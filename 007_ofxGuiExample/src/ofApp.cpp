@@ -2,6 +2,9 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    
+    ofSetWindowTitle("007_ofxGuiExample"); // ウィンドウのタイトルを設定
+    
     // 円の解像度を設定
     ofSetCircleResolution(64);
     
