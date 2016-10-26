@@ -1,6 +1,6 @@
 <Parameters>
 	<countX>200</countX>
-	<stepX>1</stepX>
-	<twistX>1.35</twistX>
+	<stepX>5</stepX>
+	<twistX>-18.9</twistX>
 <Parameters/>
 </Parameters>
